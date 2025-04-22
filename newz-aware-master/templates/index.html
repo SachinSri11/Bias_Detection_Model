@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>NewzAware</title>
+</head>
+<body>
+    <div class="breaking-news">
+        Breaking News: Latest Updates
+    </div>
+
+    <header>
+        <h1>NewzAWARE</h1>
+        <h2>Bringing the Truth out</h2>
+    </header>
+
+    <div class='news'>
+        {% for title, url, img, pred in articles %}
+        <a class='article-link' href="{{url}}">
+            <div class='article-block'>
+                <div class="category-tag">News</div>
+                <img src="{{img}}" alt="">
+                <div class="article-content">
+                    <h3>{{title}}</h3>
+                    <div class="bias-label">{{pred}}</div>
+                    <div class="article-meta">
+                        <span class="time">2 hours ago</span> •
+                        <span class="source">Source Name</span>
+                    </div>
+                </div>
+            </div>
+        </a>
+        {% endfor %}
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            Built by:
+            <a href="">Sachin, Aditi and Kaushiki :)</a>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,36 @@
+== DataSet: Quantifying News Media Bias through Crowdsourcing and Machine Learning Dataset ==
+Authoremail: cbudak@umich.edu
+Creator: 
+Budak, Ceren
+Goel, Sharad
+Rao, Justin M
+Date Published: 2019-10-08T15:10:16+00:00
+Depositor: sborda@umich.edu
+Description: 
+Our primary analysis is based on articles published in 2013 by the top thirteen US news outlets and two popular political blogs.  To compile the set of articles published by these outlets, we first examined the complete web-browsing records for US-located users who installed the Bing Toolbar, an optional add-on application for the Internet Explorer web browser. For each of the fifteen news sites, we recorded all unique URLs that were visited by at least ten toolbar users, and we then crawled the news sites to obtain the full article title and text. This process resulted in a corpus of 803,146 articles published on the
+fifteen news sites over the course of a year, with each article annotated with its relative popularity.
+Next, we built two binary classifiers using large-scale logistic regression. The first classifier—which we refer to as the news classifier —identifies “news” articles (i.e., articles that would typically appear in the front section of a traditional newspaper). The second classifier—the politics classifier —identifies political news from the subset of articles identified as news by the first classifier. 340,191 (42 percent) were classified as news.  On the set of 340,191 news articles, 114,814 (34 percent) were classified as political. 
+Having identified approximately 115,000 political news articles, we next seek to categorize the articles by topic (e.g., gay rights, healthcare, etc.), and to quantify the political slant of the article. To do so, we turn to human judges recruited via Mechanical Turk to analyze the articles.  For every day in 2013, we randomly selected two political articles, when available, from each of the 15 outlets we study, with sampling weights equal to the number of times the article was visited by our panel of toolbar users.
+Amazon Mechanical Turk Labeling task: To detect and control for possible preconceptions of an outlet’s ideological slant, workers, upon first entering the experiment, were randomly assigned to either a blinded or unblinded condition. In the blinded condition, workers were presented with only the article’s title and text, whereas in the unblinded condition, they were additionally shown the name of the outlet in which the article was published. Each article was then analyzed by two workers, one each from the sets of workers in the two conditions.
+For each article, each worker completed the following three tasks. First, they provided primary and secondary article classifications from a list of fifteen topics: (1) civil rights; (2) Democrat scandals; (3) drugs; (4) economy; (5) education; (6) elections; (7) environment; (8) gay rights; (9) gun-related crimes; (10) gun rights/regulation; (11) healthcare; (12) international news; (13) national security; (14) Republican scandals; and (15) other. 
+Second, workers determined whether the article was descriptive news or opinion. Third, to measure ideological slant, workers were asked, “Is the article generally positive, neutral, or negative toward members of the Democratic Party?” and separately, “Is the article generally positive, neutral, or negative toward members of the Republican Party?” Choices for these last two questions were provided on a five-point scale: very positive, somewhat positive, neutral, somewhat negative, and very negative. To mitigate question-ordering effects, workers were initially randomly assigned to being asked either the Democratic or Republican party question first; the question order remained the same for any subsequent articles the worker rated.
+Finally, we assigned each article a partisanship score between –1 and 1, where a negative rating indicates that the article is net left-leaning and a positive rating indicates that it is net right-leaning. Specifically, for an article’s depiction of the Democratic Party, the five-point scale from very positive to very negative is encoded as –1, –0.5, 0, 0.5, 1. Analogously, for an article’s depiction of the Republican Party, the scale is encoded as 1, 0.5, 0, –.0.5, –1. The score for each article is defined as the average over these two ratings. Thus, an average score of –1, for example, indicates that the article is very positive toward Democrats and very negative toward Republicans. The result of this procedure is a large, representative sample of political news articles, with direct human judgments on partisanship and article topic.
+Doi: doi:10.7302/gqz9-rt39
+Keyword: 
+news media
+media bias
+crowdsourcing
+machine learning
+Methodology: This dataset is generated through an analysis of news articles published online in 2013. We first gather all relevant news articles through an examination of Bing toolbar data and through the use of automated scripts to retrieve the content of the URL observed in that data. Next, we use a combination of crowdsourcing and machine learning techniques to first identify all news and, next, political news in our sample. Next, we run a large crowdsourcing experiment to determine the ideological bias and topic of the articles pertaining to political news.
+Read Me File Set: b8515n46z
+Referenced By: 
+https://academic.oup.com/poq/article-abstract/80/S1/250/2223443/?redirectedFrom=fulltext
+Ceren Budak, Sharad Goel, Justin M. Rao, Fair and Balanced? Quantifying Media Bias through Crowdsourced Content Analysis, Public Opinion Quarterly, Volume 80, Issue S1, 2016, Pages 250–271, https://doi.org/10.1093/poq/nfw007
+Rights License: http://creativecommons.org/licenses/by-nc/4.0/
+Subject Discipline: Social Sciences
+State: active
+Title: Quantifying News Media Bias through Crowdsourcing and Machine Learning Dataset
+Total File Count: 2
+Total File Size: 2.93 MB
+Visibility: published
+Workflow State: deposited

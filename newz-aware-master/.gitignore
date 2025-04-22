@@ -1,0 +1,6 @@
+__pycache__/
+env/
+TrainingData/body.csv
+TrainingData/scrapedDataset.csv
+NEWS_API_KEY
+venv/

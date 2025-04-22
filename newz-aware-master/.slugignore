@@ -1,0 +1,10 @@
+TrainingData/
+LSTMModelPrep.ipynb
+.github/
+.gitignore
+accuracies.png
+losses.png
+logger.py
+predictions.log
+README.md
+sampleNews.json
